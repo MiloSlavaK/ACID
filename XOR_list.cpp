@@ -39,6 +39,16 @@ Node* create() {
 	}
 }
 
+void push_front(int val) {
+	Node* new_node = new Node(val);
+	if (head == nullptr) {
+		head = tail = new_node;
+	} else {
+		new_node->npx=XOR(nullptr, head);
+		Node* next_node=XOR(nullptr, head->npx);
+		head->npx = XOR(new_node->)
+	}
+}
 
 void print(Node* head) {
 	Node* cur = head;
